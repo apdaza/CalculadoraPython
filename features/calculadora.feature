@@ -1,9 +1,9 @@
 Feature: The calculator
 
 Scenario Outline: Get sum total
-  Given a <values_add>
+  Given a <values_add> to sum
   When the calculator sums the values
-  Then the <total_add> is correct
+  Then the <total_add> of sum is correct
 
   Examples: values_add
   | values_add         | total_add |
@@ -12,9 +12,9 @@ Scenario Outline: Get sum total
   | 15,33              | 48        |
 
 Scenario Outline: Get sub total
-  Given a <values_sub>
+  Given a <values_sub> to substract
   When the calculator substract the values
-  Then the <total_sub> is correct
+  Then the <total_sub> of substraction is correct
 
   Examples: values_sub
   | values_sub          | total_sub |
