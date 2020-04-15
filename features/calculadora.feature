@@ -10,6 +10,7 @@ Scenario Outline: Get sum total
   | 5,7                | 12        |
   | 5,3                | 8         |
   | 15,33              | 48        |
+  | 33,15              | 48        |
 
 Scenario Outline: Get sub total
   Given a <values_sub> to substract
