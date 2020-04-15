@@ -11,6 +11,7 @@ Scenario Outline: Get sum total
   | 5,3            | 8     |
   | 15,33          | 48    |
   | 33,15          | 48    |
+  | 23,10          | 33    |
 
 Scenario Outline: Get substraction total
   Given a <values> to substract
