@@ -23,3 +23,14 @@ Scenario Outline: Get substraction total
   | 5,7             | -2    |
   | 5,3             | 2     |
   | 115,30          | 85    |
+
+Scenario Outline: Get product total
+  Given a <values> to multiply
+  When the calculator multiply the values
+  Then the <total> of multiply is correct
+
+  Examples: values
+  | values         | total |
+  | 5,2            | 10    |
+  | 5,3            | 15    |
+  | 3,5            | 15    |
