@@ -14,3 +14,7 @@ class TestCalculadora:
     def test_resta(self):
         calculadora = Calculadora()
         assert 2 == calculadora.restar(4, 2)
+
+    def test_multiplicar(self):
+        calculadora = Calculadora()
+        assert 15 == calculadora.multiplicar(3, 5)
