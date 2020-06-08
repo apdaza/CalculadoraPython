@@ -34,3 +34,15 @@ Scenario Outline: Get product total
   | 5,2            | 10    |
   | 5,3            | 15    |
   | 3,5            | 15    |
+
+  Scenario Outline: Get division total
+    Given a <values> to divide
+    When the calculator divide the values
+    Then the <total> of divide is correct
+
+    Examples: values
+    | values         | total |
+    | 10,2           | 5     |
+    | 51,3           | 17    |
+    | 12,6           | 2     |
+    | 120,5          | 24    |
