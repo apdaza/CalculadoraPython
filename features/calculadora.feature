@@ -46,3 +46,14 @@ Scenario Outline: Get product total
     | 51,3           | 17    |
     | 12,6           | 2     |
     | 120,5          | 24    |
+
+  Scenario Outline: Get pow total
+    Given a <values> to pow
+    When the calculator pow the values
+    Then the <total> of pow is correct
+
+    Examples: values
+    | values         | total |
+    | 10,2           | 100   |
+    | 3,3            | 27    |
+    
