@@ -11,7 +11,7 @@ class Calculadora():
         return valor1 * valor2
 
     def dividir(self, valor1, valor2):
-        return valor1 / valor2
+        return valor1 // valor2
 
     def elevar(self, valor1, valor2):
         return valor1 ** valor2
