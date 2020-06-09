@@ -56,4 +56,3 @@ Scenario Outline: Get product total
     | values         | total |
     | 10,2           | 100   |
     | 3,3            | 27    |
-    
