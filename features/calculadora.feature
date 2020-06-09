@@ -46,6 +46,7 @@ Scenario Outline: Get product total
     | 51,3           | 17    |
     | 12,6           | 2     |
     | 120,5          | 24    |
+    | 5,2            | 2     |
 
   Scenario Outline: Get pow total
     Given a <values> to pow
