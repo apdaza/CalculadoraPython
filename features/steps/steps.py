@@ -60,7 +60,7 @@ def step_impl(context, values):
 
 @when("the calculator pow the values")
 def step_impl(context):
-    context.total = context.calculadora.elevar(int(context.values[0], int(context.values[1])))
+    context.total = context.calculadora.elevar(int(context.values[0]), int(context.values[1]))
 
 @then("the {total:d} of pow is correct")
 def step_impl(context, total):
