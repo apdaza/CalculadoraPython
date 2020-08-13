@@ -24,37 +24,3 @@ Scenario Outline: Get substraction total
   | 5,3             | 2     |
   | 115,30          | 85    |
 
-Scenario Outline: Get product total
-  Given a <values> to multiply
-  When the calculator multiply the values
-  Then the <total> of multiply is correct
-
-  Examples: values
-  | values         | total |
-  | 5,2            | 10    |
-  | 5,3            | 15    |
-  | 3,5            | 15    |
-
-  Scenario Outline: Get division total
-    Given a <values> to divide
-    When the calculator divide the values
-    Then the <total> of divide is correct
-
-    Examples: values
-    | values         | total |
-    | 10,2           | 5     |
-    | 51,3           | 17    |
-    | 12,6           | 2     |
-    | 120,5          | 24    |
-    | 5,2            | 2     |
-
-  Scenario Outline: Get pow total
-    Given a <values> to pow
-    When the calculator pow the values
-    Then the <total> of pow is correct
-
-    Examples: values
-    | values         | total |
-    | 10,2           | 100   |
-    | 3,3            | 27    |
-    | 2,5            | 32    | 
